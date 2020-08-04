@@ -1,5 +1,5 @@
 body{
-    background-image: url(/assets/pawpatron.png);
+    background-image: url(../assets/pawpatron.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -30,7 +30,7 @@ header ul li {
 }
 /* FOTO GRANDE */
 section#mainSecc{
-    background-image: url(/assets/matt-nelson-aI3EBLvcyu4-unsplash.jpg);
+    background-image: url(../assets/matt-nelson-aI3EBLvcyu4-unsplash.jpg);
     background-size: auto;
     background-position: top;
     height: 50vh;
