@@ -1,0 +1,140 @@
+body{
+    background-image: url(/assets/pawpatron.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* MENU */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-size: cover;
+    border: 1px solid black;
+}
+
+header ul {
+    display: flex;  
+   
+}
+
+header ul li {
+    padding: 1px;
+    margin: 25px;
+    list-style: none;
+    font-size: larger;
+
+
+
+}
+/* FOTO GRANDE */
+section#mainSecc{
+    background-image: url(/assets/matt-nelson-aI3EBLvcyu4-unsplash.jpg);
+    background-size: auto;
+    background-position: top;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+
+
+}
+/* Letra de foto grande */
+
+section#mainSecc p {
+    color: whitesmoke;
+    font-size: xx-large;
+}
+
+/* Articulo */
+img#gato{
+    width: 150px;
+    border-radius: 70%;
+}
+
+img.perro{
+    width: 150px;
+    border-radius: 70%;
+}
+
+
+section#mainArt{
+   
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row-reverse;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+article.parrafo{
+    width: 50vw;
+    margin-top: 20px;
+    float: left;
+    margin-left: 50px; 
+
+}
+/* footer */
+#footer{
+    
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div p {
+    margin-top: 10px;
+    text-decoration: underline black;
+    font-size: 20px;
+}
+img.icon{
+    width: 100px;
+    margin:  50px
+}
+/* form */
+#form{
+    display: flex;
+    flex-direction: column;
+   width: 50vw;
+   
+}
+/* main Contacto */
+#mainContac{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+input.largo{
+    width: 15vw;
+}
+
+
+#contenedor{
+margin: 10px;
+    display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+
+}
+
+.cartaEstilo{
+    display:inline-block;
+    width:30%;
+    border:1px solid black;
+    height:55vh;
+    display:flex;
+    flex-direction: column;
+}
