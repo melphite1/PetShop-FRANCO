@@ -2,7 +2,7 @@
 fetch('https://apipetshop.herokuapp.com/api/articulos')
     .then(response => response.json())
     .then(listaArt => {
-// Ingreso a la lista de articulos
+        // Ingreso a la lista de articulos
         var articulos = listaArt.response
         var farmacos = []
         var juguetes = []
@@ -38,7 +38,13 @@ fetch('https://apipetshop.herokuapp.com/api/articulos')
                 var precio = cosa.precio
 
                 // Renderizo el DOM
-                var contenedor = document.getElementById("contenedor")
+                function capturoElemento( clase) {
+                    document.getElementById(`${clase}`)
+                }
+                var contenedor = capturoElemento("contenedor")
+
+
+                 var contenedor = document.getElementById("contenedor")
                 var carta = document.createElement("div")
                 carta.className = "card"
                 var img = document.createElement("img")
@@ -47,14 +53,20 @@ fetch('https://apipetshop.herokuapp.com/api/articulos')
                 var titulo = document.createElement("h6")
                 var desc = document.createElement("p")
                 var cajita = document.createElement("div")
-                cajita.className="cajitaM"
+                cajita.className = "cajitaM"
                 var btnComprar = document.createElement("button")
+                 btnComprar.addEventListener("click", ()=>{
+                    event.preventDefault()
+                    swal("¿Queres comprar esto?", {
+                        buttons: ["No", "Si"],
+                      });
+                 })
                 btnComprar.className = "btn btn-dark"
-                btnComprar.innerText="Comprar"
+                btnComprar.innerText = "Comprar"
                 var precioCartel = document.createElement("p")
                 precioCartel.className = "precioCartel"
                 precioCartel.innerText = `$ ${precio}`
-// If para ultimas unidades
+                // If para ultimas unidades
                 if (cosa.stock <= 5) {
                     var cajaStock = document.createElement("div")
                     cajaStock.className = "card-footer text-muted text-center"
@@ -77,6 +89,8 @@ fetch('https://apipetshop.herokuapp.com/api/articulos')
                 cajita.append(precioCartel, btnComprar)
                 carta.append(img, titulo, desc, cajita, cajaStock)
                 contenedor.append(carta)
+
+              
 
             })
         }
