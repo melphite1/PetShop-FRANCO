@@ -1,22 +1,24 @@
-body{
-    background-image: url(../assets/pawpatron.png);
-    background-repeat: no-repeat;
+body {
+    background: url(../assets/pawpatron2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 
 }
+
 /* MENU */
+
 header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-    background-size: cover;
-    border: 1px solid black;
+    margin: 0 70px;
 }
 
 header ul {
-    display: flex;  
-   
+    display: flex;
+    margin-top: 50px;
 }
 
 header ul li {
@@ -24,117 +26,270 @@ header ul li {
     margin: 25px;
     list-style: none;
     font-size: larger;
+    margin-top: 70px;
+    background-color:rgb(230, 160, 110);
+    border-radius: 50px;
+    padding: 5px;
+}
 
+.texto {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
 
 
 }
+
+header ul li a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
 /* FOTO GRANDE */
-section#mainSecc{
+
+section#mainSecc {
     background-image: url(../assets/matt-nelson-aI3EBLvcyu4-unsplash.jpg);
     background-size: auto;
     background-position: top;
     height: 50vh;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid grey;
+    font-size: 25px;
+    font-weight: bolder;
+    font-variant-caps: titling-caps;
+    margin: 0 70px;
+    border: 5px solid chocolate;
+}
+
+#titulo {
+    font-size: 50px;
+    display: flex;
     justify-content: center;
-    border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+}
 
-
+h1{
+    font-family: 'Raleway', sans-serif;
 }
 /* Letra de foto grande */
 
 section#mainSecc p {
-    color: whitesmoke;
+    color: chocolate;
     font-size: xx-large;
 }
 
 /* Articulo */
-img#gato{
+
+img#gato {
     width: 150px;
     border-radius: 70%;
 }
 
-img.perro{
+img.perro {
     width: 150px;
-    border-radius: 70%;
+    border-radius: 75%;
 }
 
-
-section#mainArt{
-   
+section#mainArt {
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: flex-end;
     flex-direction: row-reverse;
+    margin: 0 70px;
 }
 
-aside{
+#articulos2 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-article.parrafo{
+
+article.parrafo {
     width: 50vw;
     margin-top: 20px;
     float: left;
-    margin-left: 50px; 
-
+    margin-left: 50px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+    background-color: rgb(230, 160, 110);
+    border-radius: 50px;
+    padding: 50px;
+  
 }
+
 /* footer */
-#footer{
-    
+#mapa{
+    margin: 20px;
+}
+#footer {
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
+    font-size: large;
+    background: rgba(255, 182, 122, 1);
+    background: -moz-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(20%, rgba(255, 182, 122, 1)), color-stop(30%, rgba(255, 182, 122, 0.94)), color-stop(54%, rgba(255, 140, 46, 0.8)), color-stop(65%, rgba(255, 182, 122, 0.73)), color-stop(100%, rgba(255, 182, 122, 0.52)));
+    background: -webkit-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -o-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: linear-gradient(to right, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb67a', endColorstr='#ffb67a', GradientType=1);
+    margin: 0 70px;
+    border-radius: 50px 50px 0 0;
 }
+
+div.footerDiv {
+    margin: 10px;
+}
+
 footer div p {
     margin-top: 10px;
-    text-decoration: underline black;
     font-size: 20px;
-}
-img.icon{
-    width: 100px;
-    margin:  50px
-}
-/* form */
-#form{
     display: flex;
-    flex-direction: column;
-   width: 50vw;
-   
+    justify-content: center;
 }
+
+img.icon {
+    width: 50px;
+    margin: 10px 50px
+}
+
+/* form */
+
+#form {
+    background-color: whitesmoke;
+    border: 50px solid rgb(230, 160, 110);
+    border-radius: 50px;
+    padding: 25px;
+
+}
+#cajabtn{
+    display: flex;
+    justify-content: center;
+}
+
 /* main Contacto */
-#mainContac{
+
+#mainContac {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
-input.largo{
+
+input.largo {
     width: 15vw;
 }
 
-
-#contenedor{
-margin: 10px;
+#contenedor {
+    margin: 10px;
     display: flex;
-   flex-wrap: wrap;
-   align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cartaEstilo {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid black;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#cartaContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.precioCartel {
+    color: black;
+    font-weight: 900;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.card {
+    background: rgba(255, 182, 122, 1);
+    background: -moz-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(20%, rgba(255, 182, 122, 1)), color-stop(30%, rgba(255, 182, 122, 0.94)), color-stop(54%, rgba(255, 140, 46, 0.8)), color-stop(65%, rgba(255, 182, 122, 0.73)), color-stop(100%, rgba(255, 182, 122, 0.52)));
+    background: -webkit-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -o-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    background: linear-gradient(to right, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb67a', endColorstr='#ffb67a', GradientType=1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 30rem;
+    margin: 20px;
+    padding: 0px;
 
 }
 
-.cartaEstilo{
-    display:inline-block;
-    width:30%;
-    border:1px solid black;
-    height:55vh;
-    display:flex;
-    flex-direction: column;
+.card-text {
+    margin: 5px 10px;
+    font-weight: 500;
+    height: 150px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: justify;
+    
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 5px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bolder;
+}
+
+.caja {
+    width: 100%;
+    background-color: red;
+    text-align: center;
+
+
+}
+.caja p{
+    color: white;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    border-radius: 20px;
+    width: 300px;
+}
+
+.cajitaM{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
