@@ -115,6 +115,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 article.parrafo {
@@ -179,11 +180,16 @@ img.icon {
     border: 50px solid rgb(230, 160, 110);
     border-radius: 50px;
     padding: 25px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 
 }
 #cajabtn{
     display: flex;
     justify-content: center;
+}
+
+#btn{
+    margin-top: 10px;
 }
 
 /* main Contacto */
@@ -238,7 +244,6 @@ input.largo {
     background: linear-gradient(to right, rgba(255, 182, 122, 1) 20%, rgba(255, 182, 122, 0.94) 30%, rgba(255, 140, 46, 0.8) 54%, rgba(255, 182, 122, 0.73) 65%, rgba(255, 182, 122, 0.52) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb67a', endColorstr='#ffb67a', GradientType=1);
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 40px;
     overflow: hidden;
@@ -264,6 +269,7 @@ input.largo {
     margin: 5px;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bolder;
+    margin-top: 50px;
 }
 
 .caja {
@@ -285,6 +291,7 @@ input.largo {
 .card-img-top {
     border-radius: 20px;
     width: 300px;
+    margin-top: 25px;
 }
 
 .cajitaM{
@@ -292,4 +299,16 @@ input.largo {
     margin-top: 20px;
     margin-bottom: 20px;
     
+}
+
+#acomodar{
+    display: flex;
+    flex-direction: column;
+}
+
+#fondo{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

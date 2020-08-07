@@ -50,6 +50,7 @@ fetch('https://apipetshop.herokuapp.com/api/articulos')
                 var img = document.createElement("img")
                 img.className = "card-img-top"
                 img.src = farmaImg
+                img.alt = "producto"
                 var titulo = document.createElement("h6")
                 var desc = document.createElement("p")
                 var cajita = document.createElement("div")
@@ -107,3 +108,5 @@ fetch('https://apipetshop.herokuapp.com/api/articulos')
 
 
     )
+
+ 
